@@ -1,8 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@300;400;500;600;700&display=swap');
-
 * {
-  width: 100%;
-  height: 100%;
   margin: 0;
-  paddign: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: #FF6969;
+  background: linear-gradient(to right,  #999, #000);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  top: 10%
+  overflow: hidden;
+  width: 798px;
+  max-width: 100%;
+  min-width: 50px;  
+  max-height: 100%;
+  min-height: 320px;
+  gap: 10px;
+  padding: 5px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  margin: 20px;
+}
+
+.container .social-container {
+  margin: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.container span {
+  font-size: 14px;
+}
+
+.container .social-container a {
+  color: #EEEEEE;
+  font-size: 20px;
+  padding: 2px;
+  text-decoration: none;
+  height: 40px;
+  width: 40px;
+  align-items: centre;
+  justify-content: centre;
+  display: inline-flex;
+}
+.container .social-container a:hover {
+  color: whitesmoke;
+}
+.container .social-container a:visited {
+  color: #EEEEEE;
+}
+.container .social-container a:active {
+  color: white;
+}
+.container button {
+  background-color: #0B60B0;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.container button.hidden {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.container form {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  height: 100%;
+  border-radius: 5%;
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+}
+.container input {
+  color: #000;
+  border: none;
+  margin: 8px 0;
+  padding: 12px 15px;
+  font-size: 13px;
+  border-radius: 5px;
+  width: 100%;
 }
